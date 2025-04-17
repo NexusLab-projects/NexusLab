@@ -1,0 +1,684 @@
+
+/* ===== PÁGINA DE DETALHES DA NEXUSMC ===== */
+.nexumc-detail-page {
+    padding-top: 2rem;
+}
+
+/* Hero Section */
+.nexumc-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nexumc-category {
+    display: inline-block;
+    background-color: var(--light-accent);
+    color: var(--white);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.nexumc-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.nexumc-excerpt {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.server-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    background-color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.status-indicator.online {
+    background-color: #4CAF50;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.status-text {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.players-count {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* NexusMC Details */
+.nexumc-details {
+    padding: 4rem 1rem;
+    background-color: var(--light-bg);
+}
+
+.details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--light-accent);
+}
+
+.nexumc-overview p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.nexumc-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: var(--light-accent);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: var(--text-color-light);
+}
+
+/* Game Modes */
+.nexumc-modes {
+    margin: 4rem 0;
+}
+
+.modes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.mode-card {
+    background-color: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.mode-card:hover {
+    transform: translateY(-5px);
+}
+
+.mode-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-accent);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+}
+
+.mode-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.mode-card p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Specs */
+.nexumc-specs {
+    margin: 4rem 0;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.spec-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.spec-card:hover {
+    transform: translateY(-5px);
+}
+
+.spec-card i {
+    font-size: 2rem;
+    color: var(--light-accent);
+    margin-top: 0.5rem;
+}
+
+.spec-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.spec-info p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Gallery */
+.nexumc-gallery {
+    margin: 4rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Testimonials */
+.nexumc-testimonials {
+    margin: 4rem 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.rating {
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.author span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* CTA Section */
+.nexumc-cta {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: var(--white);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nexumc-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nexumc-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode */
+.dark-mode .nexumc-details {
+    background-color: #2A2A2A;
+}
+
+.dark-mode .feature-card,
+.dark-mode .mode-card,
+.dark-mode .spec-card,
+.dark-mode .testimonial-card,
+.dark-mode .gallery-item,
+.dark-mode .server-status {
+    background-color: #333333;
+}
+
+.dark-mode .feature-card h3,
+.dark-mode .mode-card h3,
+.dark-mode .spec-info h3,
+.dark-mode .testimonial-card p,
+.dark-mode .author span,
+.dark-mode .status-text {
+    color: #EEEEEE;
+}
+
+.dark-mode .feature-card p,
+.dark-mode .mode-card p,
+.dark-mode .spec-info p {
+    color: #CCCCCC;
+}
+
+/* ===== RESET & BASE STYLES ===== */
+:root {
+    --primary-color: #3601A8;
+    --secondary-color: #4200FF;
+    --accent-color: #6630FF;
+    --light-accent: #9874FF;
+    --background: #FFF6F6;
+    --text-color: #333333;
+    --white: #FFFFFF;
+    --dark-bg: #1F1F1F;
+    --dark-text: #F0F0F0;
+    --online-color: #4CAF50;
+    --offline-color: #F44336;
+    --loading-color: #FFC107;
+}
+
+body {
+    font-family: 'League Spartan', Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===== SERVER STATUS CONTAINER ===== */
+.server-status-container {
+    max-width: 600px;
+    width: 100%;
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.server-status-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, var(--secondary-color), var(--light-accent));
+}
+
+.server-status-container h1 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.server-status-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, var(--secondary-color), var(--light-accent));
+    border-radius: 3px;
+}
+
+/* ===== STATUS CARD ===== */
+.status-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.status-item:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.value {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Status specific styles */
+#server-status {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+#server-status::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Status states */
+.server-online #server-status {
+    color: var(--online-color);
+}
+
+.server-online #server-status::before {
+    background-color: var(--online-color);
+    animation: none;
+}
+
+.server-offline #server-status {
+    color: var(--offline-color);
+}
+
+.server-offline #server-status::before {
+    background-color: var(--offline-color);
+    animation: none;
+}
+
+/* Minecraft theme touch */
+.minecraft-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background-image: url('https://www.minecraft.net/content/dam/minecraft/touchup-2020/minecraft-logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ===== DARK MODE ===== */
+.dark-mode .server-status-container {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.dark-mode .hero-content .nexumc-excerpt{
+   color: #FFFFFF;
+}
+
+.dark-mode .nexumc-overview p{
+   color: #FFFFFF;
+}
+
+.dark-mode .status-card {
+    background: rgba(31, 31, 31, 0.7);
+}
+
+.dark-mode .status-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .label {
+    color: var(--light-accent);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 480px) {
+    .server-status-container {
+        padding: 1.5rem;
+    }
+    
+    .status-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .value {
+        align-self: flex-end;
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 480px) {
+    .server-status-container {
+        padding: 1.5rem;
+    }
+    
+    .status-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .value {
+        align-self: flex-end;
+    }
+}
+
+
+/* Responsivo */
+@media (min-width: 768px) {
+    .nexumc-hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 2rem;
+    }
+    
+    .hero-content {
+        flex: 1;
+        padding-right: 3rem;
+        text-align: left;
+    }
+    
+    .nexumc-title,
+    .nexumc-excerpt {
+        text-align: left;
+    }
+    
+    .hero-image {
+        flex: 1;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nexumc-title {
+        font-size: 2rem;
+    }
+    
+    .nexumc-excerpt {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .nexumc-cta h2 {
+        font-size: 1.5rem;
+    }
+    
+    .server-status {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}

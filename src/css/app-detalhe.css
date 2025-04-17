@@ -1,0 +1,501 @@
+/* ===== PÁGINA DE DETALHES DO APP ===== */
+.app-detail-page {
+    padding-top: 2rem;
+}
+
+/* Hero Section */
+.app-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.app-category {
+    display: inline-block;
+    background-color: var(--light-accent);
+    color: var(--white);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.app-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.app-excerpt {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.app-download {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.download-btn i {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.download-btn.app-store {
+    background-color: #000;
+    color: #fff;
+}
+
+.download-btn.google-play {
+    background-color: #4285F4;
+    color: #fff;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.app-devices {
+    position: relative;
+    height: 400px;
+    margin-top: 2rem;
+}
+
+.app-devices .device {
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.app-devices .iphone {
+    width: 150px;
+    bottom: 0;
+    left: 10%;
+    z-index: 3;
+}
+
+.app-devices .ipad {
+    width: 250px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.app-devices .android {
+    width: 180px;
+    bottom: 0;
+    right: 10%;
+    z-index: 3;
+}
+
+/* App Details */
+.app-details {
+    padding: 4rem 1rem;
+    background-color: var(--light-bg);
+}
+
+.details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--light-accent);
+}
+
+.app-overview p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.app-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: var(--light-accent);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: var(--text-color-light);
+}
+
+/* Screenshots */
+.app-screenshots {
+    margin: 4rem 0;
+}
+
+.screenshots-carousel {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.screenshots-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.screenshot {
+    flex: 0 0 250px;
+    scroll-snap-align: start;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.screenshot:hover {
+    transform: scale(1.05);
+}
+
+.screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Technologies */
+.app-technologies {
+    margin: 4rem 0;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tech-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.75rem;
+}
+
+.tech-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Testimonials */
+.app-testimonials {
+    margin: 4rem 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.rating {
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.author span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* CTA Section */
+.app-cta {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: var(--white);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.app-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.app-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação dos dispositivos */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.app-devices .iphone {
+    animation: float 6s ease-in-out infinite;
+}
+
+.app-devices .ipad {
+    animation: float 5s ease-in-out infinite 1s;
+}
+
+.app-devices .android {
+    animation: float 7s ease-in-out infinite 0.5s;
+}
+
+/* Dark Mode */
+.dark-mode .app-details {
+    background-color: #2A2A2A;
+}
+
+.dark-mode .hero-content .app-excerpt{
+   color: #FFFFFF;
+}
+
+.dark-mode .app-overview p{
+   color: #FFFFFF;
+}
+
+.dark-mode .feature-card,
+.dark-mode .tech-item,
+.dark-mode .testimonial-card,
+.dark-mode .screenshot {
+    background-color: #333333;
+}
+
+.dark-mode .feature-card h3,
+.dark-mode .testimonial-card p,
+.dark-mode .author span {
+    color: #EEEEEE;
+}
+
+.dark-mode .feature-card p,
+.dark-mode .tech-item span {
+    color: #CCCCCC;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    .app-hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 2rem;
+    }
+    
+    .hero-content {
+        flex: 1;
+        padding-right: 3rem;
+        text-align: left;
+    }
+    
+    .app-title,
+    .app-excerpt {
+        text-align: left;
+    }
+    
+    .app-download {
+        justify-content: flex-start;
+    }
+    
+    .hero-image {
+        flex: 1;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-title {
+        font-size: 2rem;
+    }
+    
+    .app-excerpt {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .app-cta h2 {
+        font-size: 1.5rem;
+    }
+    
+    .download-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .app-devices {
+        height: 300px;
+    }
+    
+    .app-devices .iphone {
+        width: 100px;
+        left: 5%;
+    }
+    
+    .app-devices .ipad {
+        width: 180px;
+    }
+    
+    .app-devices .android {
+        width: 120px;
+        right: 5%;
+    }
+}

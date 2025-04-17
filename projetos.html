@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusLab | Nossos Projetos</title>
+    <meta name="description" content="Conheça nossos projetos inovadores na NexusLab">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/projetos.css">
+    <link rel="icon" href="src/imagens/1733340706469.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo-link">
+                <img src="src/imagens/1733340706469.png" alt="NexusLab" width="60" height="60" class="logo">
+                <span class="logo-text">NexusLab</span>
+            </a>
+            
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Início</a></li>
+                    <li><a href="projetos.html" class="nav-link active">Projetos</a></li>
+                    <li><a href="conta.html" class="nav-link">Conta</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                    <span class="theme-icon">🌗</span>
+                </button>
+ 
+    </header>
+
+    <main class="main-content projetos-page">
+        <section class="projects-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Nossos Projetos</h1>
+                <p class="hero-subtitle">Inovação e tecnologia aplicadas</p>
+            </div>
+        </section>
+
+        <section class="projects-filter">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="network">Network</button>
+                <button class="filter-btn" data-filter="host">Host</button>
+                <button class="filter-btn" data-filter="parcerias">Parceiros</button>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <div class="projects-container">
+                <!-- Projeto 1 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image-container">
+                        <img src="src/imagens/1744149634429.jpg" alt="Plataforma Web Nexus" class="project-image">
+                        <div class="project-overlay">
+                            <a href="projeto-detalhe.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">NexusLab Web</h3>
+                        <p class="project-description">Criacão de sites rápidos, seguros e sob medida para seu negócio digital.</p>
+                        <span class="project-category">Web</span>
+                    </div>
+                </article>
+
+                <!-- Projeto 2 -->
+                <article class="project-card" data-category="mobile">
+                    <div class="project-image-container">
+                        <img src="src/imagens/1744154652706.jpg" alt="App Nexus Mobile" class="project-image">
+                        <div class="project-overlay">
+                            <a href="app-detalhe.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">App NexusLab</h3>
+                        <p class="project-description">Desenvolvimento mobile sem complicação e com resultado.</p>
+                        <span class="project-category">Mobile</span>
+                    </div>
+                </article>
+
+                <!-- Projeto 3 -->
+                <article class="project-card" data-category="network">
+                    <div class="project-image-container">
+                        <img src="src/imagens/1738435501203.jpg" alt="Sistema de Recomendação AI" class="project-image">
+                        <div class="project-overlay">
+                            <a href="network-detalhe.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">NexusNetwork</h3>
+                        <p class="project-description">Conecta vários servidores de Minecraft como uma teia – rápida, flexível e sem burocracia.</p>
+                        <span class="project-category">Network</span>
+                    </div>
+                </article>
+
+                <!-- Projeto 4 -->
+                <article class="project-card" data-category="host">
+                    <div class="project-image-container">
+                        <img src="src/imagens/1742849409173.jpg" alt="Sistema IoT Industrial" class="project-image">
+                        <div class="project-overlay">
+                            <a href="sqfirasup-detalhe.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sqfira'sUp</h3>
+                        <p class="project-description">Cada play é um Up game! </p>
+                        <span class="project-category">Host</span>
+                    </div>
+                </article>
+
+                <!-- Projeto 5 -->
+                <article class="project-card" data-category="host">
+                    <div class="project-image-container">
+                        <img src="src/imagens/1705856259890.png" alt="Portal Corporativo" class="project-image">
+                        <div class="project-overlay">
+                            <a href="nexusmc-detalhe.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">NexusMC</h3>
+                        <p class="project-description">Inspirada na antiga, para uma versão totalmente inovadora! </p>
+                        <span class="project-category">Host</span>
+                    </div>
+                </article>
+                
+                <!-- Projeto 6 -->
+                <article class="project-card" data-category="parcerias">
+                    <div class="project-image-container">
+                        <img src="src/imagens/HavenNetwork.png" alt="Plataforma Web Nexus" class="project-image">
+                        <div class="project-overlay">
+                            <a href="haven-network.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">HavenNetwork</h3>
+                        <p class="project-description">A Haven Network é uma rede de servidores multimodo com foco em PvP intenso e competitividade. Destaque para os modos SkyPvP e  SkyWars. Tudo isso em uma infraestrutura estável, anti-hack e com atualizações constantes para manter o jogo justo e divertido!</p>
+                        <span class="project-category">Network</span>
+                        <span class="project-category">Parceiros</span>
+                    </div>
+                </article>
+                
+                 <!-- Projeto  -->
+                <article class="project-card" data-category="parcerias">
+                    <div class="project-image-container">
+                        <img src="src/imagens/20250412_201936.jpg" alt="Plataforma Web Nexus" class="project-image">
+                        <div class="project-overlay">
+                            <a href="havenmc.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">HavenMC</h3>
+                        <p class="project-description">Comece como um jogador, saia como um campeão da Haven!</p>
+                        <span class="project-category">Host</span>
+                        <span class="project-category">Parceiros</span>
+                    </div>
+                </article>
+
+
+                
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title">Tem um projeto em mente?</h2>
+                <p class="cta-text">Vamos transformar sua ideia em realidade</p>
+                <a href="../contato.html" class="cta-button">Fale Conosco</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2025 NexusLab. Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+                <a href="../privacidade.html" class="footer-link">Política de Privacidade</a>
+                <a href="../termos.html" class="footer-link">Termos de Serviço</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/projetos.js"></script>
+</body>
+</html>

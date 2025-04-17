@@ -1,0 +1,84 @@
+/* ===== TERMOS DE SERVIÇO ===== */
+.termos-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.termos-content {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.termos-title {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.termos-update {
+    color: var(--dark-gray);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.termos-section {
+    margin-bottom: 2rem;
+}
+
+.termos-section h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--light-accent);
+    padding-bottom: 0.5rem;
+}
+
+.termos-section p,
+.termos-section address {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.termos-section ul {
+    margin: 1rem 0 1rem 2rem;
+}
+
+.termos-section li {
+    margin-bottom: 0.5rem;
+}
+
+.termos-section a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Dark Mode */
+.dark-mode .termos-content {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.dark-mode .termos-title,
+.dark-mode .termos-section h2 {
+    color: var(--light-accent);
+}
+
+.dark-mode .termos-section a {
+    color: var(--light-accent);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .termos-title {
+        font-size: 1.8rem;
+    }
+    
+    .termos-section h2 {
+        font-size: 1.3rem;
+    }
+}

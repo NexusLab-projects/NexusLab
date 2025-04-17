@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusLab | Sqfira'sUp</title>
+    <meta name="description" content="Detalhes sobre o Sqfira'sUp - Seu nível sobe a cada Up no game!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/sqfirasup-detalhe.css">
+    <link rel="icon" href="../src/imagens/1733340706469.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../src/imagens/1733340706469.png" alt="NexusLab" width="60" height="60" class="logo">
+                <span class="logo-text">NexusLab</span>
+            </a>
+            
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Início</a></li>
+                    <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+                    <li><a href="conta.html" class="nav-link">Conta</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                    <span class="theme-icon">🌗</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content sqfirasup-detail-page">
+        <section class="sqfirasup-hero">
+            <div class="hero-content">
+                <span class="sqfirasup-category">Host</span>
+                <h1 class="sqfirasup-title">Sqfira'sUp</h1>
+                <p class="sqfirasup-excerpt">Seu nível sobe a cada Up no game!</p>
+            </div>
+            <div class="hero-image">
+                <img src="../src/imagens/1742849409173.jpg" alt="Sqfira'sUp">
+                <div class="level-animation">
+                    <div class="level-bar">
+                        <div class="level-progress" data-level="75">75%</div>
+                    </div>
+                    <span class="level-text">Nível 15</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sqfirasup-details">
+            <div class="details-container">
+                <div class="sqfirasup-overview">
+                    <h2 class="section-title">Sobre o Sqfira'sUp</h2>
+                    <p>Sqfira'sUp é um servidor de RPG único onde cada ação no jogo contribui para o progresso do seu personagem. Com um sistema de evolução inovador, você realmente sente seu personagem crescer a cada conquista.</p>
+                    
+                    <div class="sqfirasup-features">
+                        <div class="feature-card">
+                            <i class="fas fa-chart-line feature-icon"></i>
+                            <h3>Progressão Contínua</h3>
+                            <p>Sistema de evolução que recompensa todas as suas ações no jogo.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-medal feature-icon"></i>
+                            <h3>Missões Únicas</h3>
+                            <p>Centenas de missões com histórias envolventes e recompensas especiais.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-users feature-icon"></i>
+                            <h3>Comunidade</h3>
+                            <p>Eventos semanais e um sistema de clãs para jogar com amigos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sqfirasup-gameplay">
+                    <h2 class="section-title">Gameplay Exclusivo</h2>
+                    <div class="gameplay-tabs">
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="skills">Habilidades</button>
+                            <button class="tab-btn" data-tab="quests">Missões</button>
+                            <button class="tab-btn" data-tab="classes">Classes</button>
+                        </div>
+                        <div class="tabs-content">
+                            <div class="tab-pane active" id="skills">
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <i class="fas fa-fire"></i>
+                                        <h3>Combate</h3>
+                                        <p>Melhore suas habilidades de luta derrotando inimigos.</p>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="fas fa-hat-wizard"></i>
+                                        <h3>Magia</h3>
+                                        <p>Desbloqueie feitiços poderosos com o progresso.</p>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="fas fa-leaf"></i>
+                                        <h3>Coleta</h3>
+                                        <p>Recolha recursos para criar itens poderosos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="quests">
+                                <div class="quests-list">
+                                    <div class="quest-card">
+                                        <h3>A Jornada Inicial</h3>
+                                        <p>Complete as primeiras missões para desbloquear habilidades básicas.</p>
+                                        <span class="quest-reward">Recompensa: 500 XP</span>
+                                    </div>
+                                    <div class="quest-card">
+                                        <h3>O Tesouro Perdido</h3>
+                                        <p>Encontre o tesouro escondido nas cavernas sombrias.</p>
+                                        <span class="quest-reward">Recompensa: 1500 XP</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="classes">
+                                <div class="classes-grid">
+                                    <div class="class-card">
+                                        <img src="../src/imagens/warrior-class.jpg" alt="Guerreiro">
+                                        <h3>Guerreiro</h3>
+                                        <p>Especialista em combate corpo a corpo.</p>
+                                    </div>
+                                    <div class="class-card">
+                                        <img src="../src/imagens/mage-class.jpg" alt="Mago">
+                                        <h3>Mago</h3>
+                                        <p>Poderosos feitiços de longa distância.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sqfirasup-progression">
+                    <h2 class="section-title">Sistema de Progressão</h2>
+                    <div class="progression-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Ganhe XP</h3>
+                            <p>Complete missões, derrote inimigos e explore o mundo.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Suba de Nível</h3>
+                            <p>Cada nível desbloqueia novas habilidades e áreas.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Personalize</h3>
+                            <p>Escolha especializações únicas para seu personagem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sqfirasup-cta">
+            <div class="cta-container">
+                <h2>Pronto para começar sua jornada?</h2>
+                <p>Junte-se a milhares de jogadores e comece sua aventura hoje mesmo</p>
+                <div class="cta-buttons">
+                    <a href="https://sqfirasup.com" target="_blank" class="cta-button primary">Jogar Agora</a>
+                    <a href="projetos.html" class="cta-button secondary">Ver Outros Projetos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2025 NexusLab. Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+                <a href="../privacidade.html" class="footer-link">Política de Privacidade</a>
+                <a href="../termos.html" class="footer-link">Termos de Serviço</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/sqfirasup-detalhe.js"></script>
+</body>
+</html>
