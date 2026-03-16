@@ -339,8 +339,7 @@ a {
 }
 
 @media (max-width: 480px) {
-    .nav-list {
-        flex-direction: inherit;
+    .nav-list }
         align-items: center;
         gap: 0.5rem;
     }
